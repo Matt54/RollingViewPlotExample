@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		4F54F6A3262B76000064F4A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F54F6A2262B76000064F4A9 /* ContentView.swift */; };
 		4F54F6A5262B76010064F4A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F54F6A4262B76010064F4A9 /* Assets.xcassets */; };
 		4F54F6A8262B76010064F4A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F54F6A7262B76010064F4A9 /* Preview Assets.xcassets */; };
+		4F54F6B2262B76A90064F4A9 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4F54F6B1262B76A90064F4A9 /* AudioKitUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F54F6B2262B76A90064F4A9 /* AudioKitUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = RollingViewPlotExample;
+			packageProductDependencies = (
+				4F54F6B1262B76A90064F4A9 /* AudioKitUI */,
+			);
 			productName = RollingViewPlotExample;
 			productReference = 4F54F69D262B76000064F4A9 /* RollingViewPlotExample.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 4F54F694262B76000064F4A9;
+			packageReferences = (
+				4F54F6B0262B76A90064F4A9 /* XCRemoteSwiftPackageReference "AudioKitUI" */,
+			);
 			productRefGroup = 4F54F69E262B76000064F4A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F54F6B0262B76A90064F4A9 /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitUI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F54F6B1262B76A90064F4A9 /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F54F6B0262B76A90064F4A9 /* XCRemoteSwiftPackageReference "AudioKitUI" */;
+			productName = AudioKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F54F695262B76000064F4A9 /* Project object */;
 }
